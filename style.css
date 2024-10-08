@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Navbar */
+#Navbar {
+    background-color: #ffb347;
+    padding: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    font-size: 1.2em;
+    color: #fff;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #ff851b;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Seção Home */
+#home {
+    background-image: url(https://www.rbsdirect.com.br/filestore/8/8/9/7/0/3/2_006f9c780429c82/2307988_1eb6a47e795ab2e.jpg?w=600);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#home h1 {
+    font-size: 3em;
+}
+
+.Galeria{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    /* Gap é o espaçamento entre as divs */
+    gap: 0.1px;
+}
+.Galeria div{
+    background-size: cover;
+    background-position: center center;
+    flex: 1;
+    transition: all 0.5s cubic-bezier(0,1,.41,.99)
+}
+
+.Galeria div:hover{
+    flex: 4;
+}
+
+.Galeria:hover div:not(:hover){
+    filter: opacity(46%);
+}
+
+#cardapio {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 40px;
+}
